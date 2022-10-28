@@ -1,0 +1,39 @@
+{
+    "plugins": [
+        [
+            "module-resolver",
+            {
+                "alias": {
+                    "~": "./src"
+                }
+            }
+        ],
+        [
+            "babel-plugin-root-import",
+            {
+                "paths": [
+                    {
+                        "rootPathSuffix": "./src/assets",
+                        "rootPathPrefix": "@assets"
+                    },
+                    {
+                        "rootPathSuffix": "./src/components",
+                        "rootPathPrefix": "@components"
+                    },
+                    {
+                        "rootPathSuffix": "./src/redux",
+                        "rootPathPrefix": "@redux"
+                    },
+                    {
+                        "rootPathSuffix": "./src/pages",
+                        "rootPathPrefix": "@pages"
+                    },
+                    {
+                        "rootPathSuffix": "./src/utils",
+                        "rootPathPrefix": "@utils"
+                    }
+                ]
+            }
+        ]
+    ]
+}
